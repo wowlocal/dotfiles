@@ -1,0 +1,8 @@
+# Ignore zsh completion cache
+.zcompdump*
+
+# Ignore generated files
+*.zwc
+
+# OS files
+.DS_Store

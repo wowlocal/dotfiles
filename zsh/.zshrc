@@ -1,0 +1,99 @@
+# ============================================================================
+# Zsh Configuration - Optimized for Fast Startup
+# ============================================================================
+
+# ----------------------------------------------------------------------------
+# Environment Variables
+# ----------------------------------------------------------------------------
+export EDITOR='nvim'
+export PATH="$PATH:/Users/mike/.lmstudio/bin"
+export PATH="$PATH:/Applications/IntelliJ IDEA CE.app/Contents/MacOS"
+
+# ----------------------------------------------------------------------------
+# Prompt - Minimal Robbyrussell-style (replaces oh-my-zsh)
+# ----------------------------------------------------------------------------
+autoload -Uz vcs_info
+precmd() { vcs_info }
+
+zstyle ':vcs_info:git:*' formats '%F{cyan}(%b)%f '
+zstyle ':vcs_info:*' enable git
+
+setopt PROMPT_SUBST
+PROMPT='%F{green}%n@%m%f %F{blue}%~%f ${vcs_info_msg_0_}%F{red}❯%f '
+
+# ----------------------------------------------------------------------------
+# Lazy Loading - NVM (saves ~250ms)
+# ----------------------------------------------------------------------------
+export NVM_DIR="$HOME/.nvm"
+
+nvm() {
+  unset -f nvm node npm npx
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+  nvm "$@"
+}
+
+node() {
+  unset -f nvm node npm npx
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+  node "$@"
+}
+
+npm() {
+  unset -f nvm node npm npx
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+  npm "$@"
+}
+
+npx() {
+  unset -f nvm node npm npx
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+  npx "$@"
+}
+
+# ----------------------------------------------------------------------------
+# Completion System - Optimized (saves ~100ms)
+# ----------------------------------------------------------------------------
+fpath=(~/.docker/completions $fpath)
+autoload -Uz compinit
+
+# Only regenerate compdump once a day
+if [[ -n ${HOME}/.zcompdump(#qN.mh+24) ]]; then
+  compinit
+else
+  compinit -C
+fi
+
+# ----------------------------------------------------------------------------
+# Shell Integrations
+# ----------------------------------------------------------------------------
+
+# FZF
+[ -f "$HOME/.fzf" ] && source "$HOME/.fzf"
+
+# Zoxide
+if command -v zoxide &> /dev/null; then
+  eval "$(zoxide init zsh)"
+fi
+
+# Zsh Autosuggestions
+if [ -f "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ]; then
+  source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+fi
+
+# Local environment
+[ -f "$HOME/.local/bin/env" ] && . "$HOME/.local/bin/env"
+
+# ----------------------------------------------------------------------------
+# Aliases
+# ----------------------------------------------------------------------------
+alias tm='task-master'
+alias taskmaster='task-master'
+alias gh='open . -a Ghostty'
+
+# ----------------------------------------------------------------------------
+# Additional Config Files
+# ----------------------------------------------------------------------------
+# Source additional configs if they exist
+for config in ~/.config/zsh/*.zsh; do
+  [ -f "$config" ] && source "$config"
+done
