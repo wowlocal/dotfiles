@@ -11,25 +11,52 @@ My personal dotfiles managed with GNU Stow.
 
 ## Installation
 
-### Prerequisites
-
-```bash
-# Install Stow (if not already installed)
-brew install stow
-```
-
-### Deploy Dotfiles
+### Quick Start (Recommended)
 
 ```bash
 # Clone this repo (or initialize if already created)
 cd ~/dotfiles
 
+# Install all required Homebrew packages
+./install-brew-apps.sh
+
 # Deploy zsh configuration
 stow zsh
 
-# Deploy other configurations as you add them
-# stow nvim
-# stow git
+# Restart your shell
+exec zsh
+```
+
+### Manual Installation
+
+If you prefer to install packages manually:
+
+```bash
+# Install Homebrew (if not already installed)
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Install core packages
+brew install stow fnm zsh-autosuggestions zsh-syntax-highlighting
+
+# Install visual enhancement packages
+brew install eza bat git-delta fzf fd
+
+# Install optional productivity tools
+brew install zoxide ripgrep htop tree jq tldr
+
+# Deploy dotfiles
+cd ~/dotfiles
+stow zsh
+
+# Restart your shell
+exec zsh
+```
+
+### Installation Script Options
+
+```bash
+./install-brew-apps.sh          # Install all packages (recommended)
+./install-brew-apps.sh --minimal # Install only core required packages
 ```
 
 ### Remove/Unstow
