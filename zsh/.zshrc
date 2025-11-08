@@ -22,33 +22,12 @@ setopt PROMPT_SUBST
 PROMPT='%F{green}%n@%m%f %F{blue}%~%f ${vcs_info_msg_0_}%F{red}❯%f '
 
 # ----------------------------------------------------------------------------
-# Lazy Loading - NVM (saves ~250ms)
+# FNM - Fast Node Manager (replaces NVM, saves ~250ms)
 # ----------------------------------------------------------------------------
-export NVM_DIR="$HOME/.nvm"
+eval "$(fnm env --use-on-cd)"
 
-nvm() {
-  unset -f nvm node npm npx
-  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-  nvm "$@"
-}
-
-node() {
-  unset -f nvm node npm npx
-  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-  node "$@"
-}
-
-npm() {
-  unset -f nvm node npm npx
-  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-  npm "$@"
-}
-
-npx() {
-  unset -f nvm node npm npx
-  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-  npx "$@"
-}
+# Alias nvm to fnm for muscle memory
+alias nvm='fnm'
 
 # ----------------------------------------------------------------------------
 # Completion System - Optimized (saves ~100ms)
