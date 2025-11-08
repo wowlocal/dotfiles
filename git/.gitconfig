@@ -1,0 +1,19 @@
+[user]
+	name = Misha Kh
+	email = kh.misha.9@icloud.com
+[core]
+	excludesfile = /Users/mike/.gitignore
+	pager = delta
+[push]
+	autoSetupRemote = true
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+	line-numbers = true
+	side-by-side = true
+	syntax-theme = Monokai Extended
+[merge]
+	conflictstyle = diff3
+[diff]
+	colorMoved = default

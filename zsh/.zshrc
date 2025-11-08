@@ -93,7 +93,10 @@ alias gh='open . -a Ghostty'
 # ----------------------------------------------------------------------------
 # Additional Config Files
 # ----------------------------------------------------------------------------
-# Source additional configs if they exist
+# Load visual enhancements last (syntax highlighting must be at the end)
 for config in ~/.config/zsh/*.zsh; do
   [ -f "$config" ] && source "$config"
 done
+
+# Note: zsh-syntax-highlighting is loaded in visual-enhancements.zsh
+# and MUST be sourced last for optimal performance
