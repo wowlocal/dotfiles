@@ -139,6 +139,18 @@ if [[ "$MINIMAL" == false ]]; then
     "tldr"     # Simplified man pages
   )
 
+  # Install try (manual installation - brew formula has checksum issues)
+  print_header "Installing try (experiment with commands)..."
+  if [[ -f "$HOME/.local/bin/try" ]]; then
+    print_warning "try is already installed"
+  else
+    echo "Installing try manually..."
+    mkdir -p "$HOME/.local/bin"
+    curl -sL https://raw.githubusercontent.com/tobi/try/refs/heads/main/try.rb -o "$HOME/.local/bin/try"
+    chmod +x "$HOME/.local/bin/try"
+    print_success "Installed try to ~/.local/bin/try"
+  fi
+
   for package in "${OPTIONAL_PACKAGES[@]}"; do
     if brew list "$package" &> /dev/null; then
       print_warning "$package is already installed"

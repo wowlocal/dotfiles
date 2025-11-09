@@ -59,6 +59,11 @@ if [ -f "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ]; 
   source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 fi
 
+# Try - experiment with commands before committing
+if command -v try &> /dev/null; then
+  eval "$(try init)"
+fi
+
 # Local environment
 [ -f "$HOME/.local/bin/env" ] && . "$HOME/.local/bin/env"
 
