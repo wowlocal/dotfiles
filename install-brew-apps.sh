@@ -141,14 +141,14 @@ if [[ "$MINIMAL" == false ]]; then
 
   # Install try (manual installation - brew formula has checksum issues)
   print_header "Installing try (experiment with commands)..."
-  if [[ -f "$HOME/.local/bin/try" ]]; then
+  if [[ -f "$HOME/.local/try.rb" ]]; then
     print_warning "try is already installed"
   else
-    echo "Installing try manually..."
-    mkdir -p "$HOME/.local/bin"
-    curl -sL https://raw.githubusercontent.com/tobi/try/refs/heads/main/try.rb -o "$HOME/.local/bin/try"
-    chmod +x "$HOME/.local/bin/try"
-    print_success "Installed try to ~/.local/bin/try"
+    echo "Installing try..."
+    mkdir -p "$HOME/.local"
+    curl -sL https://raw.githubusercontent.com/tobi/try/refs/heads/main/try.rb -o "$HOME/.local/try.rb"
+    chmod +x "$HOME/.local/try.rb"
+    print_success "Installed try to ~/.local/try.rb"
   fi
 
   for package in "${OPTIONAL_PACKAGES[@]}"; do

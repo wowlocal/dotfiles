@@ -60,8 +60,8 @@ if [ -f "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ]; 
 fi
 
 # Try - experiment with commands before committing
-if command -v try &> /dev/null; then
-  eval "$(try init)"
+if [[ -f "$HOME/.local/try.rb" ]]; then
+  eval "$(ruby ~/.local/try.rb init ~/src/tries)"
 fi
 
 # Local environment
