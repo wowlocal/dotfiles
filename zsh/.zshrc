@@ -19,7 +19,7 @@ zstyle ':vcs_info:git:*' formats '%F{cyan}(%b)%f '
 zstyle ':vcs_info:*' enable git
 
 setopt PROMPT_SUBST
-PROMPT='%F{green}%n@%m%f %F{blue}%~%f ${vcs_info_msg_0_}%F{red}❯%f '
+PROMPT='%(?.%F{green}✓%f.%F{red}✗%f) %F{green}%n@%m%f %F{blue}%~%f ${vcs_info_msg_0_}%F{red}❯%f '
 
 # ----------------------------------------------------------------------------
 # FNM - Fast Node Manager (replaces NVM, saves ~250ms)
