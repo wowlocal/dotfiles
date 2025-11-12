@@ -67,6 +67,9 @@ else
   compinit -C
 fi
 
+# Completion navigation
+bindkey '^[[Z' reverse-menu-complete  # Shift-Tab to go backwards in menu
+
 # ----------------------------------------------------------------------------
 # Shell Integrations
 # ----------------------------------------------------------------------------
