@@ -8,3 +8,8 @@
 # alias ls='ls -G'
 # alias ll='ls -lah'
 # alias grep='grep --color=auto'
+
+# Tail output when opening files with less
+lg() {
+  less +G "$@"
+}
