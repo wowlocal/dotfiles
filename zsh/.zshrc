@@ -9,6 +9,11 @@ export EDITOR='nvim'
 export PATH="$PATH:/Users/mike/.lmstudio/bin"
 export PATH="$PATH:/Applications/IntelliJ IDEA CE.app/Contents/MacOS"
 
+# Ensure interactive shells load the default keymap so history keys work in all terminals
+if [[ $- == *i* ]]; then
+  bindkey -e
+fi
+
 # ----------------------------------------------------------------------------
 # History Configuration
 # ----------------------------------------------------------------------------
