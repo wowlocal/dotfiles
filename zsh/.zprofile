@@ -13,21 +13,23 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # ----------------------------------------------------------------------------
-# Pyenv - Lazy Loading (saves ~80ms)
+# Pyenv - Fully Lazy Loaded (saves ~87ms)
 # ----------------------------------------------------------------------------
 export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 
-# Only do path init, defer full init
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init --path)"
+# Set paths manually instead of calling pyenv init --path (saves 87ms)
+if [[ -d $PYENV_ROOT ]]; then
+  export PATH="$PYENV_ROOT/shims:$PYENV_ROOT/bin:$PATH"
 
-  # Lazy load full pyenv initialization
-  pyenv() {
-    unset -f pyenv
-    eval "$(command pyenv init - zsh)"
-    pyenv "$@"
+  # Lazy load pyenv - only initialize when python/pip/pyenv is actually used
+  _pyenv_lazy_load() {
+    unfunction pyenv python pip 2>/dev/null
+    eval "$(pyenv init - --no-rehash zsh)"
   }
+
+  pyenv() { _pyenv_lazy_load; pyenv "$@"; }
+  python() { _pyenv_lazy_load; python "$@"; }
+  pip() { _pyenv_lazy_load; pip "$@"; }
 fi
 
 # ----------------------------------------------------------------------------
