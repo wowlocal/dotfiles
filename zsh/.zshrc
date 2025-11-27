@@ -51,12 +51,19 @@ precmd() {
 }
 
 # ----------------------------------------------------------------------------
-# FNM - Fast Node Manager (replaces NVM, saves ~250ms)
+# FNM - Fast Node Manager (lazy-loaded)
 # ----------------------------------------------------------------------------
-eval "$(fnm env --use-on-cd)"
+# Lazy-load fnm - only initialize when node/npm/npx/fnm is actually used
+_fnm_lazy_load() {
+  unfunction node npm npx fnm nvm 2>/dev/null
+  eval "$(command fnm env --use-on-cd)"
+}
 
-# Alias nvm to fnm for muscle memory
-alias nvm='fnm'
+fnm() { _fnm_lazy_load; fnm "$@"; }
+node() { _fnm_lazy_load; node "$@"; }
+npm() { _fnm_lazy_load; npm "$@"; }
+npx() { _fnm_lazy_load; npx "$@"; }
+nvm() { _fnm_lazy_load; fnm "$@"; }
 
 # ----------------------------------------------------------------------------
 # Completion System - Optimized (saves ~100ms)
