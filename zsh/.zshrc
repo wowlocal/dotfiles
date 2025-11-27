@@ -74,12 +74,21 @@ alias nvm='fnm'
 fpath=(~/.docker/completions $fpath)
 autoload -Uz compinit
 
-# Only regenerate compdump once a day
-if [[ -n ${HOME}/.zcompdump(#qN.mh+24) ]]; then
+# Only regenerate compdump once per day using date-based check
+# Use -C flag to skip security checks (safe for personal machines)
+if [ "$(date +'%j')" != "$(stat -f '%Sm' -t '%j' ~/.zcompdump 2>/dev/null)" ]; then
   compinit
 else
   compinit -C
 fi
+
+# Compile zcompdump in background for faster loading next time
+{
+  zcompdump="${ZDOTDIR:-$HOME}/.zcompdump"
+  if [[ -s "$zcompdump" && (! -s "${zcompdump}.zwc" || "$zcompdump" -nt "${zcompdump}.zwc") ]]; then
+    zcompile "$zcompdump"
+  fi
+} &!
 
 # Completion navigation
 bindkey '^[[Z' reverse-menu-complete  # Shift-Tab to go backwards in menu
