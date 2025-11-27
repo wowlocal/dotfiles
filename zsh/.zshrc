@@ -17,6 +17,10 @@ if [[ $- == *i* ]]; then
   bindkey -e
 fi
 
+# Make Ctrl+W delete words by path components (stop at /, ., -)
+# Remove these characters from WORDCHARS so they act as word boundaries
+WORDCHARS='*?_[]~=&;!#$%^(){}<>'
+
 # ----------------------------------------------------------------------------
 # History Configuration
 # ----------------------------------------------------------------------------
