@@ -37,26 +37,16 @@ setopt HIST_SAVE_NO_DUPS         # Do not write a duplicate event to the history
 setopt HIST_VERIFY               # Do not execute immediately upon history expansion
 
 # ----------------------------------------------------------------------------
-# Prompt - Minimal Robbyrussell-style (replaces oh-my-zsh)
+# Prompt - Minimal and Fast
 # ----------------------------------------------------------------------------
-autoload -Uz vcs_info
-precmd() { vcs_info }
-
-zstyle ':vcs_info:git:*' formats '%F{cyan}(%b)%f '
-zstyle ':vcs_info:*' enable git
-
 setopt PROMPT_SUBST
 
-# Truncate long paths intelligently
-# %2~ shows last 2 directories, %3~ shows last 3, etc.
-# Or use %40<...<%~%<< to truncate at 40 chars with ellipsis
 # Multi-line prompt for better readability with long paths
-PROMPT='%(?.%F{green}✓%f.%F{red}✗%f) %F{green}%n@%m%f %F{blue}%40<...<%~%<<%f ${vcs_info_msg_0_}
+PROMPT='%(?.%F{green}✓%f.%F{red}✗%f) %F{green}%n@%m%f %F{blue}%40<...<%~%<<%f
 %F{red}❯%f '
 
 # Keep cursor as a steady block (DECSCUSR Ps=2)
 precmd() {
-  vcs_info
   printf '\e[2 q'
 }
 
