@@ -51,6 +51,12 @@ setopt PROMPT_SUBST
 PROMPT='%(?.%F{green}✓%f.%F{red}✗%f) %F{green}%n@%m%f %F{blue}%40<...<%~%<<%f ${vcs_info_msg_0_}
 %F{red}❯%f '
 
+# Keep cursor as a steady block (DECSCUSR Ps=2)
+precmd() {
+  vcs_info
+  printf '\e[2 q'
+}
+
 # ----------------------------------------------------------------------------
 # FNM - Fast Node Manager (replaces NVM, saves ~250ms)
 # ----------------------------------------------------------------------------
