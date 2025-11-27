@@ -11,11 +11,14 @@ My personal dotfiles managed with GNU Stow.
 
 ## Installation
 
+The Powerlevel10k prompt theme is tracked as a git submodule. Clone with `--recurse-submodules` or run `git submodule update --init --recursive` after cloning/pulling so the theme files are available locally.
+
 ### Quick Start (Recommended)
 
 ```bash
 # Clone this repo (or initialize if already created)
 cd ~/dotfiles
+git submodule update --init --recursive  # Fetch powerlevel10k prompt theme
 
 # Install all required Homebrew packages
 ./install-brew-apps.sh
@@ -46,6 +49,7 @@ brew install zoxide ripgrep htop tree jq tldr
 
 # Deploy dotfiles
 cd ~/dotfiles
+git submodule update --init --recursive  # Ensure powerlevel10k is present
 stow zsh
 
 # Restart your shell
@@ -103,6 +107,7 @@ dotfiles/
 
 ```bash
 cd ~/dotfiles
+git submodule update --init --recursive  # Pull any submodule updates
 git add .
 git commit -m "Update configs"
 git push
@@ -112,5 +117,6 @@ On another machine:
 ```bash
 cd ~/dotfiles
 git pull
+git submodule update --init --recursive  # Fetch/update powerlevel10k
 stow zsh  # Reapply if needed
 ```
