@@ -42,7 +42,7 @@ setopt HIST_VERIFY               # Do not execute immediately upon history expan
 setopt PROMPT_SUBST
 
 # Multi-line prompt for better readability with long paths
-PROMPT='%(?.%F{green}✓%f.%F{red}✗%f) %F{green}%n@%m%f %F{blue}%40<...<%~%<<%f
+PROMPT='%(?.%F{green}✓%f.%F{red}✗%f) %F{blue}%~%f
 %F{red}❯%f '
 
 # Keep cursor as a steady block (DECSCUSR Ps=2)
