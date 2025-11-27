@@ -2,6 +2,20 @@
 # Zsh Configuration - Optimized for Fast Startup
 # ============================================================================
 
+# Disable Powerlevel10k gitstatus daemon to prevent background processes (helps Ghostty close confirmation)
+typeset -g POWERLEVEL9K_DISABLE_GITSTATUS=1
+
+# ----------------------------------------------------------------------------
+# Powerlevel10k Instant Prompt - Must be at the very top
+# ----------------------------------------------------------------------------
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # ----------------------------------------------------------------------------
 # Environment Variables
 # ----------------------------------------------------------------------------
@@ -41,13 +55,12 @@ setopt HIST_SAVE_NO_DUPS         # Do not write a duplicate event to the history
 setopt HIST_VERIFY               # Do not execute immediately upon history expansion
 
 # ----------------------------------------------------------------------------
-# Prompt - Minimal and Fast
+# Prompt - Powerlevel10k (replaces minimal prompt)
 # ----------------------------------------------------------------------------
-setopt PROMPT_SUBST
-
-# Multi-line prompt for better readability with long paths
-PROMPT='%(?.%F{green}✓%f.%F{red}✗%f) %F{blue}%~%f
-%F{red}❯%f '
+# Previous minimal prompt is commented out - using Powerlevel10k instead
+# setopt PROMPT_SUBST
+# PROMPT='%(?.%F{green}✓%f.%F{red}✗%f) %F{blue}%~%f
+# %F{red}❯%f '
 
 # Keep cursor as a steady block (DECSCUSR Ps=2)
 precmd() {
@@ -143,3 +156,11 @@ done
 
 # Note: zsh-syntax-highlighting is loaded in visual-enhancements.zsh
 # and MUST be sourced last for optimal performance
+
+# ----------------------------------------------------------------------------
+# Powerlevel10k Theme
+# ----------------------------------------------------------------------------
+source ~/dotfiles/powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
