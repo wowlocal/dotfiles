@@ -100,9 +100,16 @@ if [ -f "$HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ]; 
   source "$HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 fi
 
-# Try - experiment with commands before committing
+# Try - experiment with commands before committing (lazy-loaded)
 if [[ -f "$HOME/.local/try.rb" ]]; then
-  eval "$(ruby ~/.local/try.rb init ~/src/tries)"
+  try() {
+    # Remove this wrapper function
+    unfunction try
+    # Load the real try function
+    eval "$(ruby ~/.local/try.rb init ~/src/tries)"
+    # Call it with the original arguments
+    try "$@"
+  }
 fi
 
 # Local environment
