@@ -94,8 +94,8 @@ zstyle ':completion:*:warnings' format ' %F{red}-- no matches found --%f'
 # ----------------------------------------------------------------------------
 # Zsh Syntax Highlighting (must be at the end)
 # ----------------------------------------------------------------------------
-if [ -f "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]; then
-  source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+if [ -f "$HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]; then
+  source "$HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
   # Customize highlighting colors
   ZSH_HIGHLIGHT_STYLES[command]='fg=green,bold'

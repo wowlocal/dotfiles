@@ -9,6 +9,9 @@ export EDITOR='nvim'
 export PATH="$PATH:/Users/mike/.lmstudio/bin"
 export PATH="$PATH:/Applications/IntelliJ IDEA CE.app/Contents/MacOS"
 
+# Cache brew prefix to avoid subprocess spawns (saves ~30-50ms per call)
+HOMEBREW_PREFIX="$(brew --prefix)"
+
 # Ensure interactive shells load the default keymap so history keys work in all terminals
 if [[ $- == *i* ]]; then
   bindkey -e
@@ -94,8 +97,8 @@ if command -v zoxide &> /dev/null; then
 fi
 
 # Zsh Autosuggestions
-if [ -f "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ]; then
-  source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+if [ -f "$HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ]; then
+  source "$HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 fi
 
 # Try - experiment with commands before committing
