@@ -14,3 +14,18 @@ set previewer ~/.config/lf/preview.sh
 
 # Set number of preview lines
 set ratios 1:2:3
+
+# ============================================================================
+# Key Bindings
+# ============================================================================
+
+# Open file with nvim (default action on Enter/l)
+cmd open ${{
+    case $(file --mime-type -Lb "$f") in
+        text/*|application/json|application/javascript|application/x-sh|application/xml|inode/x-empty) nvim "$f";;
+        *) xdg-open "$f" 2>/dev/null || open "$f" ;;
+    esac
+}}
+
+# Alternative: use 'e' to explicitly edit with nvim
+map e $nvim "$f"
