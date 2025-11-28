@@ -1,0 +1,16 @@
+# ============================================================================
+# LF Configuration - File Manager
+# ============================================================================
+
+# Basic settings
+set preview true
+set hidden true
+set drawbox true
+set icons true
+set ignorecase true
+
+# Use bat for file preview with syntax highlighting
+set previewer ~/.config/lf/preview.sh
+
+# Set number of preview lines
+set ratios 1:2:3
