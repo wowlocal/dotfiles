@@ -1,0 +1,38 @@
+font-family = "Codelia"
+font-size = 13
+window-padding-color = extend
+window-padding-x = 6,6
+window-padding-y = 6,6
+#command = /bin/zsh -c "zellij"
+
+#keybind = command+n=unbind
+#keybind = command+t=unbind
+
+macos-option-as-alt = left
+
+keybind = alt+left=unbind
+keybind = alt+right=unbind
+keybind = ctrl+o=unbind
+
+#keybind = cmd+shift+t=new_tab
+#keybind = cmd+t=new_tab
+
+keybind = alt+k=goto_split:up
+keybind = alt+j=goto_split:down
+keybind = alt+h=goto_split:left
+keybind = alt+l=goto_split:right
+
+keybind = ctrl+alt+n=scroll_page_fractional:0.5
+keybind = ctrl+alt+p=scroll_page_fractional:-0.5
+
+keybind = cmd+shift+n=toggle_quick_terminal
+
+auto-update-channel = tip
+
+cursor-style = block
+cursor-style-blink = false
+# Prevent shell integration from changing cursor shape (keeps block)
+shell-integration-features = no-cursor
+
+# Disable close confirmation even if Ghostty thinks a process is running
+confirm-close-surface = false
