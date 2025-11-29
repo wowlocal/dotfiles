@@ -89,6 +89,14 @@ dotfiles/
 - **Completion caching**: Regenerates only once per day
 - **Minimal prompt**: Custom prompt replacing oh-my-zsh (207ms saved)
 
+## LazyGit
+
+Stow the LazyGit config (sets [difftastic](https://difftastic.wilfred.me.uk/) as the default diff viewer with delta as a fallback pager you can cycle to with `|`):
+
+```bash
+stow lazygit
+```
+
 ## Adding New Configurations
 
 1. Create a new directory for the application:

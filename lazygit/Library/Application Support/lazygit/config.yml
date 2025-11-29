@@ -1,0 +1,7 @@
+git:
+  autoFetch: false
+  pagers:
+    # Default to difftastic for rich diffs
+    - externalDiffCommand: difft --color=always --display=inline
+    # Fallback to delta when cycling pagers with "|"
+    - pager: delta --dark --paging=never
