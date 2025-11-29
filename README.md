@@ -97,6 +97,14 @@ Stow the LazyGit config (sets [difftastic](https://difftastic.wilfred.me.uk/) as
 stow lazygit
 ```
 
+## Ghostty
+
+Stow the Ghostty terminal config:
+
+```bash
+stow ghostty
+```
+
 ## Adding New Configurations
 
 1. Create a new directory for the application:
