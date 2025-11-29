@@ -137,6 +137,7 @@ if [[ "$MINIMAL" == false ]]; then
     "tree"     # Directory tree viewer
     "jq"       # JSON processor
     "tldr"     # Simplified man pages
+    "difftastic" # Diff viewer
   )
 
   # Install try (manual installation - brew formula has checksum issues)

@@ -16,4 +16,5 @@
 [merge]
 	conflictstyle = diff3
 [diff]
+	external = difft
 	colorMoved = default

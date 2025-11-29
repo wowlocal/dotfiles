@@ -45,7 +45,7 @@ brew install stow fnm zsh-autosuggestions zsh-syntax-highlighting
 brew install eza bat git-delta fzf fd
 
 # Install optional productivity tools
-brew install zoxide ripgrep htop tree jq tldr
+brew install zoxide ripgrep htop tree jq tldr difftastic
 
 # Deploy dotfiles
 cd ~/dotfiles
