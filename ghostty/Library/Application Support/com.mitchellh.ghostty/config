@@ -25,6 +25,9 @@ keybind = alt+l=goto_split:right
 keybind = ctrl+alt+n=scroll_page_fractional:0.1
 keybind = ctrl+alt+p=scroll_page_fractional:-0.1
 
+# 10 times default value
+scrollback-limit = 100000000
+
 keybind = cmd+shift+n=toggle_quick_terminal
 
 auto-update-channel = tip
