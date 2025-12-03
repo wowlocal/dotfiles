@@ -12,12 +12,18 @@ export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 # EZA - Modern replacement for ls with better colors and icons
 # ----------------------------------------------------------------------------
 if command -v eza &> /dev/null; then
-  alias ls='eza --color=auto --icons=auto'
-  alias ll='eza -lah --color=auto --icons=auto --git'
-  alias la='eza -a --color=auto --icons=auto'
-  alias l='eza -lh --color=auto --icons=auto --git'
-  alias lt='eza --tree --level=2 --color=auto --icons=auto'
-  alias llt='eza -lah --tree --level=2 --color=auto --icons=auto --git'
+  alias ls='eza --color=auto --icons=auto --sort=type --group-directories-first'
+  alias ll='eza -lah --color=auto --icons=auto --sort=type --group-directories-first --git'
+  alias la='eza -a --color=auto --icons=auto --sort=type --group-directories-first'
+  alias l='eza -lh --color=auto --icons=auto --sort=type --group-directories-first --git'
+  alias lt='eza --tree --level=2 --color=auto --icons=auto --sort=type --group-directories-first'
+  alias llt='eza -lah --tree --level=2 --color=auto --icons=auto --sort=type --group-directories-first --git'
+elif command -v gls &> /dev/null; then
+  # Prefer GNU ls when available so directories are grouped first
+  alias ls='gls --color=auto --group-directories-first'
+  alias ll='gls -lah --color=auto --group-directories-first'
+  alias la='gls -A --color=auto --group-directories-first'
+  alias l='gls -lh --color=auto --group-directories-first'
 else
   # Fallback to standard ls with colors
   alias ls='ls -G'
