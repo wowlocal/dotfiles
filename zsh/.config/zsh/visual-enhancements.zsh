@@ -36,8 +36,8 @@ fi
 # BAT - Better cat with syntax highlighting
 # ----------------------------------------------------------------------------
 if command -v bat &> /dev/null; then
-  alias cat='bat --paging=never'
-  alias bcat='bat'  # bat with pager
+  # Use 'bcat' for bat with pager if you want syntax highlighting
+  alias bcat='bat --paging=never'
   export BAT_THEME="Monokai Extended"
   export BAT_STYLE="numbers,changes,header"
 fi
