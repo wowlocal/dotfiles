@@ -50,6 +50,13 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
 # ----------------------------------------------------------------------------
+# DIFFT - Better diff with syntax highlighting
+# ----------------------------------------------------------------------------
+if command -v difft &> /dev/null; then
+  alias diff='difft'
+fi
+
+# ----------------------------------------------------------------------------
 # FZF - Better fuzzy finder with preview
 # ----------------------------------------------------------------------------
 if command -v fzf &> /dev/null; then
