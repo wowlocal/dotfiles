@@ -1,5 +1,7 @@
-font-family = "Codelia"
-font-size = 13
+#font-family = "Codelia"
+#font-family = "Comic Code"
+font-family = "TX-02"
+font-size = 14
 window-padding-color = extend
 window-padding-x = 6,6
 window-padding-y = 6,6
