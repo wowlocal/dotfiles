@@ -70,17 +70,25 @@ precmd() {
 # ----------------------------------------------------------------------------
 # FNM - Fast Node Manager (lazy-loaded)
 # ----------------------------------------------------------------------------
-# Lazy-load fnm - only initialize when node/npm/npx/fnm is actually used
-_fnm_lazy_load() {
-  unfunction node npm npx fnm nvm 2>/dev/null
-  eval "$(command fnm env --use-on-cd)"
-}
+if command -v fnm >/dev/null; then
+  # Lazy-load fnm - only initialize when node/npm/npx/fnm is actually used
+  _fnm_lazy_load() {
+    unfunction node npm npx fnm nvm 2>/dev/null
+    eval "$(command fnm env --use-on-cd)"
+  }
 
-fnm() { _fnm_lazy_load; fnm "$@"; }
-node() { _fnm_lazy_load; node "$@"; }
-npm() { _fnm_lazy_load; npm "$@"; }
-npx() { _fnm_lazy_load; npx "$@"; }
-nvm() { _fnm_lazy_load; fnm "$@"; }
+  _fnm_exec() {
+    # Skip recursion if the helper gets unset in a non-standard shell environment
+    (( $+functions[_fnm_lazy_load] )) && _fnm_lazy_load
+    command "$@"
+  }
+
+  fnm() { _fnm_exec fnm "$@"; }
+  node() { _fnm_exec node "$@"; }
+  npm() { _fnm_exec npm "$@"; }
+  npx() { _fnm_exec npx "$@"; }
+  nvm() { _fnm_exec fnm "$@"; }
+fi
 
 # ----------------------------------------------------------------------------
 # Completion System - Optimized (saves ~100ms)
