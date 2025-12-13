@@ -74,11 +74,17 @@ stow -D zsh  # Removes symlinks
 
 ```
 dotfiles/
-├── zsh/
-│   ├── .zshrc              # Main zsh config
-│   ├── .zprofile           # Login shell config
-│   └── .config/zsh/        # Modular configs
-│       └── aliases.zsh     # Additional aliases
+├── ghostty/                # Ghostty terminal config
+├── git/                    # Git config
+├── keybindings/            # macOS keybindings
+├── lazygit/                # LazyGit config
+├── lf/                     # lf file manager config
+├── powerlevel10k/          # Prompt theme (submodule)
+├── zed/                    # Zed editor settings
+├── zsh/                    # Zsh shell config
+│   ├── .zshrc
+│   ├── .zprofile
+│   └── .config/zsh/
 └── README.md
 ```
 
@@ -112,6 +118,16 @@ Stow the Zed editor settings (settings + keymap):
 ```bash
 stow zed
 ```
+
+## KeyBindings
+
+Stow macOS keybindings for Cocoa apps:
+
+```bash
+stow keybindings
+```
+
+Restart apps to apply changes. Only works with native macOS apps (not Electron).
 
 ## Adding New Configurations
 
