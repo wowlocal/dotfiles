@@ -105,6 +105,14 @@ Stow the Ghostty terminal config:
 stow ghostty
 ```
 
+## Zed
+
+Stow the Zed editor settings (settings + keymap):
+
+```bash
+stow zed
+```
+
 ## Adding New Configurations
 
 1. Create a new directory for the application:
