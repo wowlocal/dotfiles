@@ -1,6 +1,10 @@
+font-family = "CodeliaLigatures Nerd Font"
+font-style = "Light"
+font-style-bold = "Regular"
+font-synthetic-style = "no-bold"
 #font-family = "Codelia"
 #font-family = "Comic Code"
-font-family = "TX-02"
+#font-family = "TX-02"
 font-size = 14
 window-padding-color = extend
 window-padding-x = 6,6
