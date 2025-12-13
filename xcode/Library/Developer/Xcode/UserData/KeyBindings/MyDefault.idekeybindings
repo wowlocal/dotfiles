@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Menu Key Bindings</key>
+	<dict>
+		<key>Key Bindings</key>
+		<array>
+			<dict>
+				<key>Action</key>
+				<string>focusSelectionAction:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>IDESceneKitEditor.CmdDefinition.Controls.FocusSelection</string>
+				<key>CommandID</key>
+				<string>IDESceneKitEditor.CmdDefinition.Controls.FocusSelection</string>
+				<key>Group</key>
+				<string>Editor Menu for SceneKit Document</string>
+				<key>GroupID</key>
+				<string>IDESceneKitEditor.SceneEditorMenu</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Controls</string>
+				<key>Title</key>
+				<string>Focus Selection</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.1A0FF8D3-A88D-438B-965D-F12FBE92D084</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Sourcery Pro</string>
+				<key>Title</key>
+				<string>Enum Matcher</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.2C3B70C8-877D-44F4-B4F1-18CB22692FAD</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Sourcery Pro</string>
+				<key>Title</key>
+				<string>AutoCasePath</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.2CC3C95D-F6A5-428B-88EA-AD782D2DB054</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Sourcery Pro</string>
+				<key>Title</key>
+				<string>SwiftUI_DebugMenu</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.5E45F84A-A42C-472D-8C55-A32912B2FBB0</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Sourcery Pro</string>
+				<key>Title</key>
+				<string>Memberwise initializer</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.7EAFDCB9-8EE5-4BAE-82B2-E9A6764A2044</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Sourcery Pro</string>
+				<key>Title</key>
+				<string>Protocol Mock</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.8C74D11E-A6D7-44C9-93CF-D192D72E2A46</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Sourcery Pro</string>
+				<key>Title</key>
+				<string>SwiftUI Form</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.53E3E132-C2C2-4D04-BD69-4E00481F7C99</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Sourcery Pro</string>
+				<key>Title</key>
+				<string>AutoCaseName</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.91D55B91-52DD-4A17-AE01-379008E6CFD3</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Sourcery Pro</string>
+				<key>Title</key>
+				<string>AutoInterfaces TCA</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.184EC0DE-B575-46BA-A90E-92FD625CA3D6</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Sourcery Pro</string>
+				<key>Title</key>
+				<string>Enum Codable</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.565BD32E-24CC-44EE-B31E-25E46E270519</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Sourcery Pro</string>
+				<key>Title</key>
+				<string>AutoInterfaces</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.732DAC13-500F-4017-8C76-765DBEF689AE</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Sourcery Pro</string>
+				<key>Title</key>
+				<string>SwiftUI Snapshot</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.8913F1D4-CEBF-4427-8C5D-0B6866813DAF</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Sourcery Pro</string>
+				<key>Title</key>
+				<string>Lenses</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.24727FE2-F925-416C-8801-B32414A74EEA</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Sourcery Pro</string>
+				<key>Title</key>
+				<string>Test (Quick)</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.75604364-DD0F-451D-9E53-4881E4D1172C</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Sourcery Pro</string>
+				<key>Title</key>
+				<string>Composable Feature</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.B5380BF6-9401-47B0-A2E1-F20B311680B2</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Sourcery Pro</string>
+				<key>Title</key>
+				<string>Prism</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.merowing.SourceryPro.SourceryProExtension,IDESourceEditorExtensionCommand:com.merowing.SourceryPro.SourceryProExtension.SourceryProExtension.SourceEditorCommand.E322F29E-C92B-4AD3-A3F6-AD7297F9A148</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Sourcery Pro</string>
+				<key>Title</key>
+				<string>AutoProperties</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.tid.Alignment-for-Xcode.Alignment,IDESourceEditorExtensionCommand:com.tid.XcodeSourceEditorExtension-Alignment.Alignment.SourceEditorCommand</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Alignment</string>
+				<key>Title</key>
+				<string>Align</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:us.eidinger.SwiftPlantUMLSourceEditorExtension,IDESourceEditorExtensionCommand:SourceEditorExtension.PreferencesCommand</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>SwiftPlantUML</string>
+				<key>Title</key>
+				<string>Preferences</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:us.eidinger.SwiftPlantUMLSourceEditorExtension,IDESourceEditorExtensionCommand:us.eidinger.SwiftPlantUMLSourceEditorExtension.GenDiagramInBrowser</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>SwiftPlantUML</string>
+				<key>Title</key>
+				<string>Open editable diagram in browser</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>closeDocument:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.CloseDocument</string>
+				<key>CommandID</key>
+				<string>Xcode.IDEKit.CmdDefinition.CloseDocument</string>
+				<key>Group</key>
+				<string>File Menu</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEKit.MenuDefinition.Main</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Keyboard Shortcut</key>
+				<string>^~@w</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Title</key>
+				<string>Close Document</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_closeActiveEditor:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.CloseEditor</string>
+				<key>CommandID</key>
+				<string>Xcode.IDEKit.CmdDefinition.CloseEditor</string>
+				<key>Group</key>
+				<string>File Menu</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEKit.MenuDefinition.Main</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Keyboard Shortcut</key>
+				<string>^@w</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Title</key>
+				<string>Close Editor Pane</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>closeOtherEditors:</string>
+				<key>Alternate</key>
+				<string>YES</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.CloseOtherEditors</string>
+				<key>CommandID</key>
+				<string>Xcode.IDEKit.CmdDefinition.CloseOtherEditors</string>
+				<key>Group</key>
+				<string>File Menu</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEKit.MenuDefinition.Main</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Keyboard Shortcut</key>
+				<string>^$@W</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Title</key>
+				<string>Close Other Editor Panes</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>performCloseWorkspace:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.CloseWorkspace</string>
+				<key>CommandID</key>
+				<string>Xcode.IDEKit.CmdDefinition.CloseWorkspace</string>
+				<key>Group</key>
+				<string>File Menu</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEKit.MenuDefinition.Main</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Title</key>
+				<string>Close Workspace</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>toggleDebuggerVisibility:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.DebuggerToggleVisibility</string>
+				<key>CommandID</key>
+				<string>Xcode.IDEKit.CmdDefinition.DebuggerToggleVisibility</string>
+				<key>Group</key>
+				<string>View Menu</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEKit.MenuDefinition.Main</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Keyboard Shortcut</key>
+				<string>@j</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Debug Area</string>
+				<key>Title</key>
+				<string>Show Debug Area</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>goBackInHistoryByCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.GoBack</string>
+				<key>CommandID</key>
+				<string>Xcode.IDEKit.CmdDefinition.GoBack</string>
+				<key>Group</key>
+				<string>Navigate Menu</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEKit.MenuDefinition.Main</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Keyboard Shortcut</key>
+				<string>^-</string>
+				<key>Navigation</key>
+				<string>YES</string>
+				<key>Title</key>
+				<string>Show Previous Location in History</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>goBackInHistoryByCommandWithAlternate:</string>
+				<key>Alternate</key>
+				<string>YES</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.GoBackWithAlternate</string>
+				<key>CommandID</key>
+				<string>Xcode.IDEKit.CmdDefinition.GoBackWithAlternate</string>
+				<key>Group</key>
+				<string>Navigate Menu</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEKit.MenuDefinition.Main</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Keyboard Shortcut</key>
+				<string>^~-</string>
+				<key>Navigation</key>
+				<string>YES</string>
+				<key>Title</key>
+				<string>Show Previous Location in History (option)</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>goBackInHistoryByCommandWithShiftPlusAlternate:</string>
+				<key>Alternate</key>
+				<string>YES</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.GoBackWithShiftPlusAlternate</string>
+				<key>CommandID</key>
+				<string>Xcode.IDEKit.CmdDefinition.GoBackWithShiftPlusAlternate</string>
+				<key>Group</key>
+				<string>Navigate Menu</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEKit.MenuDefinition.Main</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Keyboard Shortcut</key>
+				<string>^~_</string>
+				<key>Navigation</key>
+				<string>YES</string>
+				<key>Title</key>
+				<string>Show Previous Location in History (shift+option)</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>goForwardInHistoryByCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.GoForward</string>
+				<key>CommandID</key>
+				<string>Xcode.IDEKit.CmdDefinition.GoForward</string>
+				<key>Group</key>
+				<string>Navigate Menu</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEKit.MenuDefinition.Main</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Keyboard Shortcut</key>
+				<string>^_</string>
+				<key>Navigation</key>
+				<string>YES</string>
+				<key>Title</key>
+				<string>Show Next Location in History</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>goForwardInHistoryByCommandWithAlternate:</string>
+				<key>Alternate</key>
+				<string>YES</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.GoForwardWithAlternate</string>
+				<key>CommandID</key>
+				<string>Xcode.IDEKit.CmdDefinition.GoForwardWithAlternate</string>
+				<key>Group</key>
+				<string>Navigate Menu</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEKit.MenuDefinition.Main</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Keyboard Shortcut</key>
+				<string>^~-</string>
+				<key>Navigation</key>
+				<string>YES</string>
+				<key>Title</key>
+				<string>Show Next Location in History (option)</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>goForwardInHistoryByCommandWithShiftPlusAlternate:</string>
+				<key>Alternate</key>
+				<string>YES</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.GoForwardWithShiftPlusAlternate</string>
+				<key>CommandID</key>
+				<string>Xcode.IDEKit.CmdDefinition.GoForwardWithShiftPlusAlternate</string>
+				<key>Group</key>
+				<string>Navigate Menu</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEKit.MenuDefinition.Main</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Keyboard Shortcut</key>
+				<string>^~_</string>
+				<key>Navigation</key>
+				<string>YES</string>
+				<key>Title</key>
+				<string>Show Next Location in History (shift+option)</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>showHumanInterfaceGuidelines:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.HumanInterfaceGuidelines</string>
+				<key>CommandID</key>
+				<string>Xcode.IDEKit.CmdDefinition.HumanInterfaceGuidelines</string>
+				<key>Group</key>
+				<string>Help Menu</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEKit.MenuDefinition.Main</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Title</key>
+				<string>Human Interface Guidelines</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>moveFocusToEditor:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.MoveFocusToEditor</string>
+				<key>CommandID</key>
+				<string>Xcode.IDEKit.CmdDefinition.MoveFocusToEditor</string>
+				<key>Group</key>
+				<string>Navigate Menu</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEKit.MenuDefinition.Main</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Title</key>
+				<string>Move Focus to Editor Pane…</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>moveKeyboardFocusToNextArea:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.MoveFocusToNextArea</string>
+				<key>CommandID</key>
+				<string>Xcode.IDEKit.CmdDefinition.MoveFocusToNextArea</string>
+				<key>Group</key>
+				<string>Navigate Menu</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEKit.MenuDefinition.Main</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Keyboard Shortcut</key>
+				<string>^</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Title</key>
+				<string>Move Focus to Next Area</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>moveKeyboardFocusToPreviousArea:</string>
+				<key>Alternate</key>
+				<string>YES</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.MoveFocusToPreviousArea</string>
+				<key>CommandID</key>
+				<string>Xcode.IDEKit.CmdDefinition.MoveFocusToPreviousArea</string>
+				<key>Group</key>
+				<string>Navigate Menu</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEKit.MenuDefinition.Main</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Keyboard Shortcut</key>
+				<string>^$</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Title</key>
+				<string>Move Focus to Previous Area</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>openQuickly:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.OpenQuickly</string>
+				<key>CommandID</key>
+				<string>Xcode.IDEKit.CmdDefinition.OpenQuickly</string>
+				<key>Group</key>
+				<string>File Menu</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEKit.MenuDefinition.Main</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Keyboard Shortcut</key>
+				<string>@p</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Title</key>
+				<string>Open Quickly…</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>printDocument:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.Print</string>
+				<key>CommandID</key>
+				<string>Xcode.IDEKit.CmdDefinition.Print</string>
+				<key>Group</key>
+				<string>File Menu</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEKit.MenuDefinition.Main</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Title</key>
+				<string>Print…</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>showDocumentItemsMenu:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.ShowDocumentItemsMenu</string>
+				<key>CommandID</key>
+				<string>Xcode.IDEKit.CmdDefinition.ShowDocumentItemsMenu</string>
+				<key>Group</key>
+				<string>View Menu</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEKit.MenuDefinition.Main</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Keyboard Shortcut</key>
+				<string>@&gt;</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Editor</string>
+				<key>Title</key>
+				<string>Show Document Items</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_toggleMaximizeEditor:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.ToggleFocusEditor</string>
+				<key>CommandID</key>
+				<string>Xcode.IDEKit.CmdDefinition.ToggleFocusEditor</string>
+				<key>Group</key>
+				<string>View Menu</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEKit.MenuDefinition.Main</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Keyboard Shortcut</key>
+				<string>^@</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Editor</string>
+				<key>Title</key>
+				<string>Focus Editor Pane</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>editTestPlan:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDETestPlanEditor.CmdDefinition.EditTestPlan</string>
+				<key>CommandID</key>
+				<string>Xcode.IDETestPlanEditor.CmdDefinition.EditTestPlan</string>
+				<key>Group</key>
+				<string>Product Menu</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEKit.MenuDefinition.Main</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Test Plan</string>
+				<key>Title</key>
+				<string>Edit Test Plan</string>
+			</dict>
+		</array>
+		<key>Version</key>
+		<integer>3</integer>
+	</dict>
+	<key>Text Key Bindings</key>
+	<dict>
+		<key>Key Bindings</key>
+		<dict>
+			<key></key>
+			<string>insertNewline:</string>
+			<key>
+</key>
+			<string>insertNewline:</string>
+			<key></key>
+			<string>insertNewline:</string>
+			<key>$@</key>
+			<string>moveToBeginningOfTextAndModifySelection:</string>
+			<key>$@</key>
+			<string>moveToEndOfTextAndModifySelection:</string>
+			<key>$</key>
+			<string>pageDownAndModifySelection:</string>
+			<key>@</key>
+			<string>moveToBeginningOfDocument:</string>
+			<key>@</key>
+			<string>moveToEndOfDocument:</string>
+			<key>@</key>
+			<string>moveToBeginningOfText:</string>
+			<key>@</key>
+			<string>moveToEndOfText:</string>
+			<key>^$A</key>
+			<string>moveToBeginningOfTextAndModifySelection:</string>
+			<key>^$E</key>
+			<string>moveToEndOfTextAndModifySelection:</string>
+			<key>^$K</key>
+			<string>deleteToBeginningOfLine:</string>
+			<key>^$V</key>
+			<string>pageUp:</string>
+			<key>^$</key>
+			<string>moveSubWordBackwardAndModifySelection:</string>
+			<key>^$</key>
+			<string>moveSubWordForwardAndModifySelection:</string>
+			<key>^@k</key>
+			<string>deleteLine:</string>
+			<key>^a</key>
+			<string>moveToBeginningOfText:</string>
+			<key>^e</key>
+			<string>moveToEndOfText:</string>
+			<key>^k</key>
+			<string>deleteToEndOfLine:</string>
+			<key>^s</key>
+			<string>selectToMark:</string>
+			<key>^x</key>
+			<string>deleteToMark:</string>
+			<key>^~$V</key>
+			<string>scrollPageUp:</string>
+			<key>^~a</key>
+			<string>moveToBeginningOfDocument:</string>
+			<key>^~d</key>
+			<string>deleteWordForward:</string>
+			<key>^~e</key>
+			<string>moveToEndOfDocument:</string>
+			<key>^~h</key>
+			<string>deleteWordBackward:</string>
+			<key>^~n</key>
+			<string>scrollLineDown:</string>
+			<key>^~o</key>
+			<string>insertNewline:</string>
+			<key>^~p</key>
+			<string>scrollLineUp:</string>
+			<key>^~v</key>
+			<string>scrollPageDown:</string>
+			<key>^~</key>
+			<string>deleteWordBackward:</string>
+			<key>^~</key>
+			<string>scrollLineUp:</string>
+			<key>^~</key>
+			<string>scrollLineDown:</string>
+			<key>^</key>
+			<string>deleteSubWordBackward:</string>
+			<key>^</key>
+			<string>scrollPageUp:</string>
+			<key>^</key>
+			<string>scrollPageDown:</string>
+			<key>^</key>
+			<string>moveSubWordBackward:</string>
+			<key>^</key>
+			<string>moveSubWordForward:</string>
+			<key>^</key>
+			<string>deleteSubWordForward:</string>
+			<key>~</key>
+			<string>deleteWordBackward:</string>
+			<key>~$A</key>
+			<string>moveToBeginningOfParagraphAndModifySelection:</string>
+			<key>~$B</key>
+			<string>moveSubWordBackwardAndModifySelection:</string>
+			<key>~$E</key>
+			<string>moveToEndOfParagraphAndModifySelection:</string>
+			<key>~$F</key>
+			<string>moveSubWordForwardAndModifySelection:</string>
+			<key>~$K</key>
+			<string>deleteToBeginningOfParagraph:</string>
+			<key>~2</key>
+			<string>swapWithMark:</string>
+			<key>~a</key>
+			<string>moveToBeginningOfParagraph:</string>
+			<key>~b</key>
+			<string>moveSubWordBackward:</string>
+			<key>~d</key>
+			<string>deleteSubWordForward:</string>
+			<key>~e</key>
+			<string>moveToEndOfParagraph:</string>
+			<key>~f</key>
+			<string>moveSubWordForward:</string>
+			<key>~h</key>
+			<string>deleteSubWordBackward:</string>
+			<key>~k</key>
+			<string>deleteToEndOfParagraph:</string>
+			<key>~w</key>
+			<string>selectWord:</string>
+			<key>~</key>
+			<string>deleteWordBackward:</string>
+			<key>~</key>
+			<string>deleteWordForward:</string>
+			<key></key>
+			<string>scrollPageUp:</string>
+			<key></key>
+			<string>scrollPageDown:</string>
+		</dict>
+		<key>Version</key>
+		<integer>3</integer>
+	</dict>
+</dict>
+</plist>

@@ -80,6 +80,7 @@ dotfiles/
 ├── lazygit/                # LazyGit config
 ├── lf/                     # lf file manager config
 ├── powerlevel10k/          # Prompt theme (submodule)
+├── xcode/                  # Xcode keybindings & themes
 ├── zed/                    # Zed editor settings
 ├── zsh/                    # Zsh shell config
 │   ├── .zshrc
@@ -128,6 +129,14 @@ stow keybindings
 ```
 
 Restart apps to apply changes. Only works with native macOS apps (not Electron).
+
+## Xcode
+
+Stow Xcode keybindings and color themes:
+
+```bash
+stow xcode
+```
 
 ## Adding New Configurations
 
