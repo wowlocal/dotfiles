@@ -8,8 +8,9 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "terminal": {
-    "font_weight": 400.0,
     "font_family": "CodeliaLigatures Nerd Font",
+    "font_size": 14,
+    "font_weight": 300.0,
     "shell": "system"
   },
   "icon_theme": "Catppuccin Frappé",
