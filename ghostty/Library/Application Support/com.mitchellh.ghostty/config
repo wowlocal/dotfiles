@@ -1,3 +1,5 @@
+#background-blur = macos-glass-regular
+#background-opacity = 0.7
 macos-titlebar-style = tabs
 
 font-family = "CodeliaLigatures Nerd Font"

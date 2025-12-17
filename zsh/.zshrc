@@ -68,29 +68,6 @@ precmd() {
 }
 
 # ----------------------------------------------------------------------------
-# FNM - Fast Node Manager (lazy-loaded)
-# ----------------------------------------------------------------------------
-if command -v fnm >/dev/null; then
-  # Lazy-load fnm - only initialize when node/npm/npx/fnm is actually used
-  _fnm_lazy_load() {
-    unfunction node npm npx fnm nvm 2>/dev/null
-    eval "$(command fnm env --use-on-cd)"
-  }
-
-  _fnm_exec() {
-    # Skip recursion if the helper gets unset in a non-standard shell environment
-    (( $+functions[_fnm_lazy_load] )) && _fnm_lazy_load
-    command "$@"
-  }
-
-  fnm() { _fnm_exec fnm "$@"; }
-  node() { _fnm_exec node "$@"; }
-  npm() { _fnm_exec npm "$@"; }
-  npx() { _fnm_exec npx "$@"; }
-  nvm() { _fnm_exec fnm "$@"; }
-fi
-
-# ----------------------------------------------------------------------------
 # Completion System - Optimized (saves ~100ms)
 # ----------------------------------------------------------------------------
 fpath=(~/.docker/completions $fpath)
