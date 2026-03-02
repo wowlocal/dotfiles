@@ -43,3 +43,6 @@ fi
 # OrbStack
 # ----------------------------------------------------------------------------
 source ~/.orbstack/shell/init.zsh 2>/dev/null || :
+
+# Added by swiftly
+. "/Users/mike/.swiftly/env.sh"
