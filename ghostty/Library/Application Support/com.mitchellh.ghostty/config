@@ -24,6 +24,8 @@ keybind = alt+left=unbind
 keybind = alt+right=unbind
 keybind = ctrl+o=unbind
 
+keybind = cmd+enter=toggle_split_zoom
+
 #keybind = cmd+shift+t=new_tab
 #keybind = cmd+t=new_tab
 
