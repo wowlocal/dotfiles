@@ -18,6 +18,9 @@ window-padding-y = 6,6
 #keybind = command+n=unbind
 #keybind = command+t=unbind
 
+keybind = cmd+~=goto_window next
+keybind = cmd+shift+~=goto_window previous
+
 macos-option-as-alt = left
 
 keybind = alt+left=unbind
