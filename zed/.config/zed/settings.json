@@ -7,6 +7,42 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "disable_ai": true,
+  "language_models": {
+    "ollama": {
+      "api_url": "http://localhost:11434"
+    }
+  },
+  "edit_predictions": {
+    "provider": "zed"
+  },
+  "cli_default_open_behavior": "existing_window",
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "right"
+  },
+  "collaboration_panel": {
+    "dock": "right"
+  },
+  "git_panel": {
+    "dock": "right"
+  },
+  "agent_servers": {
+    "qoder": {
+      "type": "registry"
+    },
+    "pi-acp": {
+      "type": "registry"
+    },
+    "codex-acp": {
+      "type": "registry"
+    },
+    "claude-acp": {
+      "type": "registry"
+    }
+  },
   "terminal": {
     "font_family": "CodeliaLigatures Nerd Font",
     "font_size": 14,
@@ -15,6 +51,8 @@
   },
   "icon_theme": "Catppuccin Frappé",
   "agent": {
+    "sidebar_side": "right",
+    "dock": "left",
     "inline_assistant_model": {
       "provider": "anthropic",
       "model": "claude-3-7-sonnet-latest"
@@ -25,9 +63,6 @@
     },
     "model_parameters": [],
     "default_profile": "write"
-  },
-  "features": {
-    "edit_prediction_provider": "zed"
   },
   "telemetry": {
     "metrics": false
