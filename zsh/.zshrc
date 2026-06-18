@@ -129,7 +129,7 @@ fi
 # ----------------------------------------------------------------------------
 alias tm='task-master'
 alias taskmaster='task-master'
-alias gh='open . -a Ghostty'
+alias ghsty='open . -a Ghostty'
 
 # ----------------------------------------------------------------------------
 # Additional Config Files
