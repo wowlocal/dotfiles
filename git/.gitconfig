@@ -18,3 +18,13 @@
 [diff]
 	external = difft
 	colorMoved = default
+[url "git@github-result-builder:resultBuilder/"]
+	insteadOf = git@github.com:resultBuilder/
+	insteadOf = ssh://git@github.com/resultBuilder/
+	insteadOf = https://github.com/resultBuilder/
+[credential "https://github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
