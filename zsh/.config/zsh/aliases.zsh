@@ -9,6 +9,9 @@
 # alias ll='ls -lah'
 # alias grep='grep --color=auto'
 
+# Display images in Ghostty using the Kitty graphics protocol.
+alias imgcat='ghostty-imgcat'
+
 # Tail output when opening files with less
 lg() {
   less +G "$@"
