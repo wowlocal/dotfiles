@@ -54,6 +54,20 @@ setopt HIST_IGNORE_SPACE         # Do not record an event starting with a space
 setopt HIST_SAVE_NO_DUPS         # Do not write a duplicate event to the history file
 setopt HIST_VERIFY               # Do not execute immediately upon history expansion
 
+# Keep giant / multi-line commands out of the saved history file so they don't
+# clutter autosuggestions. Such commands still run and stay reachable via
+# up-arrow in the current session; they're just never written to $HISTFILE.
+HIST_MAX_CMD_LEN=300             # don't save single commands longer than this
+autoload -Uz add-zsh-hook
+_hist_skip_giant() {
+  emulate -L zsh
+  local line=${1%%$'\n'}         # strip the trailing newline zsh appends
+  [[ $line == *$'\n'* ]] && return 1               # multi-line -> don't save
+  (( ${#line} > HIST_MAX_CMD_LEN )) && return 1    # too long  -> don't save
+  return 0
+}
+add-zsh-hook zshaddhistory _hist_skip_giant
+
 # ----------------------------------------------------------------------------
 # Prompt - Powerlevel10k (replaces minimal prompt)
 # ----------------------------------------------------------------------------
