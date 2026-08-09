@@ -16,10 +16,14 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# Agent terminal status integration (provided by agterm when installed).
+[[ -f "$HOME/.config/agterm/agent-status/shell/integration.sh" ]] && source "$HOME/.config/agterm/agent-status/shell/integration.sh"
+
 # ----------------------------------------------------------------------------
 # Environment Variables
 # ----------------------------------------------------------------------------
 export EDITOR='nvim'
+export PATH="$HOME/.local/bin:$PATH"
 export PATH="$PATH:/Users/mike/.lmstudio/bin"
 export PATH="$PATH:/Applications/IntelliJ IDEA CE.app/Contents/MacOS"
 
@@ -137,6 +141,11 @@ fi
 
 # Local environment
 [ -f "$HOME/.local/bin/env" ] && . "$HOME/.local/bin/env"
+
+# Keep the fnm-selected Node ahead of ~/.local/bin's system Node.
+if command -v fnm >/dev/null; then
+  eval "$(fnm env --use-on-cd)"
+fi
 
 # ----------------------------------------------------------------------------
 # Aliases

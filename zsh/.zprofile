@@ -44,8 +44,16 @@ fi
 # ----------------------------------------------------------------------------
 source ~/.orbstack/shell/init.zsh 2>/dev/null || :
 
-# Added by swiftly
-. "/Users/mike/.swiftly/env.sh"
+# Swiftly (optional)
+[[ -f "$HOME/.swiftly/env.sh" ]] && source "$HOME/.swiftly/env.sh"
+
+# ----------------------------------------------------------------------------
+# Android / DivKit toolchain
+# ----------------------------------------------------------------------------
+export JAVA_HOME="/opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home"
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export ANDROID_SDK_ROOT="$ANDROID_HOME"
+export PATH="$JAVA_HOME/bin:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools:$PATH"
 
 # ----------------------------------------------------------------------------
 # FNM - Fast Node Manager
