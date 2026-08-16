@@ -24,7 +24,7 @@ fi
 # ----------------------------------------------------------------------------
 export EDITOR='nvim'
 export PATH="$HOME/.local/bin:$PATH"
-export PATH="$PATH:/Users/mike/.lmstudio/bin"
+export PATH="$PATH:$HOME/.lmstudio/bin"
 export PATH="$PATH:/Applications/IntelliJ IDEA CE.app/Contents/MacOS"
 
 # Cache brew prefix to avoid subprocess spawns (saves ~30-50ms per call)
@@ -172,7 +172,3 @@ source ~/dotfiles/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# >>> agterm agent-status >>>
-source '/Users/mike/.config/agterm/agent-status/shell/integration.sh'
-# <<< agterm agent-status <<<
