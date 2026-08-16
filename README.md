@@ -79,6 +79,7 @@ dotfiles/
 ├── keybindings/            # macOS keybindings
 ├── lazygit/                # LazyGit config
 ├── lf/                     # lf file manager config
+├── macos/                  # macOS system defaults
 ├── powerlevel10k/          # Prompt theme (submodule)
 ├── xcode/                  # Xcode keybindings & themes
 ├── zed/                    # Zed editor settings
@@ -129,6 +130,16 @@ stow keybindings
 ```
 
 Restart apps to apply changes. Only works with native macOS apps (not Electron).
+
+## macOS defaults
+
+Apply keyboard repeat settings and disable press-and-hold accents:
+
+```bash
+./macos/apply-defaults.sh
+```
+
+Log out and back in to ensure the settings apply to every app.
 
 ## Xcode
 
