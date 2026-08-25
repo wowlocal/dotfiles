@@ -27,6 +27,21 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$PATH:$HOME/.lmstudio/bin"
 export PATH="$PATH:/Applications/IntelliJ IDEA CE.app/Contents/MacOS"
 
+# Remote SSH sessions such as Termius do not inherit macOS launchd's agent socket.
+# Reconnect to the existing agent without overriding an agent forwarded by the client.
+if [[ -z "${SSH_AUTH_SOCK:-}" && "$OSTYPE" == darwin* ]]; then
+  SSH_AUTH_SOCK="$(
+    launchctl print "gui/$(id -u)/com.openssh.ssh-agent" 2>/dev/null |
+      awk '/SSH_AUTH_SOCK =>/ {print $3; exit}'
+  )"
+
+  if [[ -S "$SSH_AUTH_SOCK" ]]; then
+    export SSH_AUTH_SOCK
+  else
+    unset SSH_AUTH_SOCK
+  fi
+fi
+
 # Cache brew prefix to avoid subprocess spawns (saves ~30-50ms per call)
 HOMEBREW_PREFIX="$(brew --prefix)"
 
