@@ -113,6 +113,18 @@ Stow the Ghostty terminal config:
 stow ghostty
 ```
 
+## SSH drag and drop
+
+The exact interactive command `ssh tail-mini` is wrapped by a local PTY proxy.
+Files, screenshots, complete folders, and multiple items dropped into the
+terminal are uploaded to `~/.ssh-dragdrop-uploads` on `tail-mini`; their remote
+paths are pasted at the current cursor position after the upload succeeds.
+
+The helper runs only on this Mac. It uses a second SSH channel for each upload,
+does not require these dotfiles on `tail-mini`, and does not start Zellij.
+Other SSH commands and non-interactive uses of `ssh` still call OpenSSH
+directly.
+
 ## Zed
 
 Stow the Zed editor settings (settings + keymap):
