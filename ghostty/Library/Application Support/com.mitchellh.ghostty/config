@@ -2,6 +2,9 @@
 #background-opacity = 0.7
 macos-titlebar-style = tabs
 
+#theme = Everforest Dark Hard
+theme = Gruvbox Dark Hard
+
 font-family = "CodeliaLigatures Nerd Font"
 font-style = "Light"
 font-style-bold = "Regular"
