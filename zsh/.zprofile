@@ -61,3 +61,6 @@ export PATH="$JAVA_HOME/bin:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME
 if command -v fnm >/dev/null; then
   eval "$(fnm env --use-on-cd)"
 fi
+
+# Hermes Agent — ensure ~/.local/bin is on PATH
+export PATH="$HOME/.local/bin:$PATH"

@@ -187,3 +187,11 @@ source ~/dotfiles/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Added by cua-driver-rs installer — see https://github.com/trycua/cua
+export PATH="/Users/mike/.local/bin:$PATH"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/mike/.lmstudio/bin"
+# End of LM Studio CLI section
+
