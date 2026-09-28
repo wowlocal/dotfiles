@@ -1,0 +1,78 @@
+#!/bin/sh
+
+set -eu
+
+native="$HOME/.local/bin/claude"
+brew="/opt/homebrew/bin/claude"
+versions="$HOME/.local/share/claude/versions"
+switch_dir="$HOME/.local/share/claude-switch/bin"
+active="$switch_dir/claude"
+
+usage() {
+  printf 'Usage: claude-switch [status|list|native|brew|toggle|VERSION]\n' >&2
+  exit 2
+}
+
+label_for() {
+  case "$1" in
+    "$native") printf 'native' ;;
+    "$brew") printf 'brew' ;;
+    "$versions"/*) printf '%s' "${1##*/}" ;;
+    *) printf 'unknown' ;;
+  esac
+}
+
+current_target() {
+  if [ -L "$active" ]; then
+    readlink "$active"
+  else
+    printf '%s' "$native"
+  fi
+}
+
+show_status() {
+  target=$(current_target)
+  if [ ! -x "$target" ]; then
+    printf 'Selected Claude (%s) is unavailable: %s\n' "$(label_for "$target")" "$target" >&2
+    exit 1
+  fi
+  printf 'Active: %s — %s\n' "$(label_for "$target")" "$("$target" --version)"
+  printf 'Path: %s\n' "$target"
+}
+
+case "${1:-status}" in
+  status)
+    [ "$#" -eq 0 ] || [ "$#" -eq 1 ] || usage
+    show_status
+    exit 0
+    ;;
+  list)
+    [ "$#" -eq 1 ] || usage
+    for candidate in "$native" "$brew" "$versions"/*; do
+      [ -x "$candidate" ] || continue
+      printf '%-10s %s\n' "$(label_for "$candidate")" "$("$candidate" --version)"
+    done
+    exit 0
+    ;;
+  native) target="$native" ;;
+  brew) target="$brew" ;;
+  toggle)
+    if [ "$(current_target)" = "$brew" ]; then target="$native"; else target="$brew"; fi
+    ;;
+  [0-9]*.[0-9]*.[0-9]*) target="$versions/$1" ;;
+  *) usage ;;
+esac
+
+[ "$#" -eq 1 ] || usage
+if [ ! -x "$target" ]; then
+  printf 'Claude executable is unavailable: %s\n' "$target" >&2
+  exit 1
+fi
+
+mkdir -p "$switch_dir"
+tmp="$switch_dir/.claude.$$"
+trap 'rm -f "$tmp"' EXIT HUP INT TERM
+ln -s "$target" "$tmp"
+mv -f "$tmp" "$active"
+trap - EXIT HUP INT TERM
+show_status

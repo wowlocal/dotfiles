@@ -168,6 +168,7 @@ fi
 alias tm='task-master'
 alias taskmaster='task-master'
 alias ghsty='open . -a Ghostty'
+alias cs='claude-switch'
 
 # ----------------------------------------------------------------------------
 # Additional Config Files
@@ -191,7 +192,9 @@ source ~/dotfiles/powerlevel10k/powerlevel10k.zsh-theme
 # Added by cua-driver-rs installer — see https://github.com/trycua/cua
 export PATH="/Users/mike/.local/bin:$PATH"
 
+# Select the Claude binary without changing installer-managed links.
+export PATH="$HOME/.local/share/claude-switch/bin:$PATH"
+
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/mike/.lmstudio/bin"
 # End of LM Studio CLI section
-
