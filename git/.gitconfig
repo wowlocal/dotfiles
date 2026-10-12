@@ -16,7 +16,6 @@
 [merge]
 	conflictstyle = diff3
 [diff]
-	external = difft
 	colorMoved = default
 [url "git@github-result-builder:resultBuilder/"]
 	insteadOf = git@github.com:resultBuilder/

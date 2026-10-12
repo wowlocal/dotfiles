@@ -21,8 +21,9 @@ window-padding-y = 6,6
 #keybind = command+n=unbind
 #keybind = command+t=unbind
 
-#keybind = cmd+~=goto_window next
-#keybind = cmd+shift+~=goto_window previous
+# Switch windows with the physical key above Tab in any keyboard layout.
+keybind = cmd+backquote=goto_window:next
+keybind = cmd+shift+backquote=goto_window:previous
 
 macos-option-as-alt = left
 
@@ -51,7 +52,7 @@ scrollback-limit = 100000000
 
 keybind = cmd+shift+n=toggle_quick_terminal
 
-# auto-update-channel = tip
+auto-update-channel = tip
 
 cursor-style = block
 cursor-style-blink = false

@@ -5,6 +5,10 @@
 # Disable Powerlevel10k gitstatus daemon to prevent background processes (helps Ghostty close confirmation)
 typeset -g POWERLEVEL9K_DISABLE_GITSTATUS=1
 
+# Raise the open-file limit (macOS/Ghostty default is 256); the shared Codex
+# app-server daemon inherits it and runs out of descriptors at 256.
+ulimit -n 65536 2>/dev/null
+
 # ----------------------------------------------------------------------------
 # Powerlevel10k Instant Prompt - Must be at the very top
 # ----------------------------------------------------------------------------
@@ -198,3 +202,6 @@ export PATH="$HOME/.local/share/claude-switch/bin:$PATH"
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/mike/.lmstudio/bin"
 # End of LM Studio CLI section
+
+# Keep the complete Codex fork launcher ahead of older CLI installs.
+export PATH="$HOME/.local/bin:$PATH"
